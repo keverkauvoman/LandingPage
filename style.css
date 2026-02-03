@@ -1,0 +1,303 @@
+html, body {
+    font-family: "Nunito Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url("img/estetica.webp") no-repeat fixed center;
+    background-size: cover;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+#header-div {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 40px;
+}
+
+header h1 {
+    color: white;
+    margin-top: 10px;
+}
+
+#frase-impacto {
+    color: white;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+header p {
+    color: white;
+    text-align: center;
+
+    span {
+        color: #EBDBBB;
+    }
+}
+
+#div-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: white;
+}
+
+#section-desc {
+    height: auto;
+    padding: 4em;
+}
+
+#section-img {
+    height: auto;
+    padding: 4em;
+}
+
+#section-img img {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2)
+}
+
+#section-desc p {
+    text-align: justify;
+    max-width: 55ch;
+    font-weight: 200;	
+    font-size: 1.125rem;
+    color: black;
+}
+
+#redes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    align-items: center;
+}
+
+i {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 2.188rem;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all linear 0.3s;
+}
+
+#face:hover {
+    cursor: pointer;
+    color: #1877F2;
+    transform: scale(1.05);
+}
+
+#whats:hover {
+    cursor: pointer;
+    color: #25D366;
+    transform: scale(1.05);
+}
+
+#insta:hover {
+    cursor: pointer;
+    color: #E1306C;
+    transform: scale(1.05);
+}
+
+#pint:hover {
+    cursor: pointer;
+    color: #e13030;
+    transform: scale(1.05);
+}
+
+#face:active {
+    color: #1877F2;
+}
+
+#whats:active {
+    color: #25D366;
+}
+
+#insta:active {
+    color: #E1306C;
+}
+
+#pint:active {
+    color: #e13030;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    padding: 4em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: linear-gradient(white, #fafafa);
+    width: auto;
+    height: auto;
+    transition: translate ease 1.5s, box-shadow ease 2s, transform 1.5s ease;
+    text-align: center;
+
+    p {
+        padding: 10px;
+    }
+}
+
+.card img:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.cards > .card:nth-last-child(2) {
+    grid-column: 1;
+}
+
+.cards > .card:last-child {
+    grid-column: 2;
+}
+
+.h3 {
+    text-align: center;
+    text-decoration: underline #EBDBBB;
+    text-underline-offset: 16px;
+    text-decoration-thickness: 2px;
+}
+
+.h1 {
+    padding-top: 2em;
+    text-align: center;
+    text-decoration: underline #EBDBBB;
+    text-underline-offset: 16px;
+    text-decoration-thickness: 2px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover; 
+    height: 200px;
+    transition: box-shadow 0.25s ease;
+}
+
+.cards-cli {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    background-color: #1c1f2b;
+    justify-content: center;
+    padding: 60px;
+    height: auto;
+}
+
+#section-soc {
+    background: #323544;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    width: 300px;
+    height: 275px;
+    padding: 20px;
+}
+
+#section-soc-nota {
+    padding-top: 20px;
+    height: auto;
+    text-align: justify;
+}
+
+#section-soc-cli {
+    display: flex;
+    align-items: center;
+
+    p {
+        padding-left: 20px;
+        font-weight: 600;
+    }
+
+    img {
+        width: 40px;
+        border-radius: 50px;
+    }
+}
+
+#footer {
+    height: auto;
+    background-color: #151720;
+    text-align: center;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    color: white;
+    font-weight: 200;
+    padding: 20px;
+}
+
+/* Telas até 1200px - Tablets e notebooks menores */
+@media (min-width: 768px) and (max-width: 1200px) {
+    html {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .card {
+        max-width: auto;
+    }
+
+    #div-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #section-desc p {
+        font-size: 1rem;
+    }
+
+    #section-img img{
+        max-width: 25vw;
+    }
+
+    #section-soc-nota p {
+        font-size: 1rem;
+    }
+
+    header p {
+        font-size: 1.125rem;
+    }
+  }
+  
+  /* Telas até 768px - Celulares */
+  @media (max-width: 767px) {
+    .card {
+        max-width: auto;
+    }
+
+    #div-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #section-desc p {
+        font-size: 1rem;
+    }
+
+    #section-img img{
+        max-width: 25vw;
+    }
+
+    #section-soc-nota p {
+        font-size: 1rem;
+    }
+
+    header p {
+        font-size: 1.125rem;
+    }
+  }
