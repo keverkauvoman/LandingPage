@@ -1,0 +1,42 @@
+:root {
+    --font1: "Merriweather", serif;
+    --font2: "DM Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, pre{
+    font-family: var(--font1);
+}
+
+p {
+    font-family: var(--font2);
+    font-size: 2rem;
+}
+
+a {
+    font-family: var(--font2);
+}
+
+h1 {
+    font-size: 7rem;
+    color: var(--c2);
+}
+
+h2 {
+    font-size: 6.5rem;
+}
+
+h3 {
+    font-size: 6rem;
+}
+
+h4 {
+    font-size: 5.5rem;
+}
+
+h5 {
+    font-size: 5rem;
+}
+
+h6 {
+    font-size: 4.5rem;
+}
